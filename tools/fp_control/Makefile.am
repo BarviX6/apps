@@ -1,5 +1,3 @@
-ACLOCAL_AMFLAGS = -I m4
-
 bin_PROGRAMS = fp_control
 
 fp_control_SOURCES = \
@@ -17,7 +15,10 @@ fp_control_SOURCES = \
 	Spark.c \
 	Cuberevo.c \
 	Adb_Box.c \
-	Cnbox.c
+	Cnbox.c \
+	Vitamin_HD5000.c
 
-AM_CFLAGS  = -Wall
+AM_CFLAGS = -Wall
 AM_LDFLAGS = -lrt
+ACLOCAL_AMFLAGS = -I m4
+

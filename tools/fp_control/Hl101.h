@@ -43,7 +43,7 @@ struct set_time_s
 	char time[5];
 };
 
-struct proton_ioctl_data
+struct aotom_ioctl_data
 {
 	union
 	{

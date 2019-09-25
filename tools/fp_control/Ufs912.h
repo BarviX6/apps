@@ -29,6 +29,11 @@ struct set_led_s
 	int on;
 };
 
+struct set_light_s
+{
+	int onoff;
+};
+
 /* time must be given as follows:
  * time[0] & time[1] = mjd ???
  * time[2] = hour
@@ -53,6 +58,7 @@ struct micom_ioctl_data
 		struct set_icon_s icon;
 		struct set_led_s led;
 		struct set_brightness_s brightness;
+		struct set_light_s light;
 		struct set_mode_s mode;
 		struct set_standby_s standby;
 		struct set_time_s time;
